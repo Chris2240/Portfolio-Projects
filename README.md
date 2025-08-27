@@ -8,10 +8,15 @@ Whoever is reading or investigating my source code, please be understandable. I 
 
 That was such a great time to spend on these projects. Irreplaceable knowledge ;)
 
-### Short Description
+### Short Description:
 
 That is vacancy job lists of single page applications (SPA) where the user (applicant) can apply for a particular job providing name, email address, phone number, etc. Employer can manage(modifying) jobs, dawnloading CV, deleting applicants and adding new jobs.
 The job list is initialize via CSV file, loading and displaying at the Main View table page.
+
+### How to run project:
+
+For people who just starting developing adventure after cloned project, in vsCode or other programming environment in terminal just typing only:
+`npm install` and you are ready to go to open the project via `npm start`.
 
 ## Projects in progress:
 
