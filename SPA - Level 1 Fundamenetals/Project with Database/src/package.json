@@ -1,0 +1,16 @@
+{
+  "dependencies": {       
+    "papaparse": "^5.4.1"
+  },
+  "name": "single-page-aplication-spa-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "This framework allows you to practice developing SPA webpages in HTML, CSS and JavaScript."
+}

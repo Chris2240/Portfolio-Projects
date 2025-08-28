@@ -1,0 +1,245 @@
+
+/* "*" universal selector use for matches every element in the document */
+* {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+    color: var(--dn-grey);
+}
+
+/* "root:" pseudo-class use for defining global CSS variables (custom variables) that can be use for all stylesheet */
+:root {
+    --dn-pink: #e70064;
+    --dn-green: #89c82e;
+    --dn-grey: #3c3c3b;
+}
+
+/* define CSS classes to apply the custom properties (CSS variables) I've declared in "root" pseudo-class */
+.dn-pink {
+    color: var(--dn-pink);
+}
+
+.dn-green {
+    color: var(--dn-green);
+}
+
+.dn-grey {
+    color: var(--dn-grey);
+}
+
+
+
+
+/* STYLING A WHOLE PAGES */
+
+
+/* --------------- Sections --------------- */
+
+.nav-section{
+    /* border: 1px solid; */
+
+    display: inline-block;      /* anything which is in this section it will go to the L/H */
+}
+
+.dn-border {
+    margin: auto;
+    border: 1px solid var(--dn-pink);
+    border-radius: 10px;
+    padding: 25px;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+}
+
+.dn-increase-border{
+    border: 1px solid var(--dn-pink);
+    padding: 40px;
+    border-radius: 10px;
+    margin-left: 65px;
+    margin-right: 65px; 
+}
+
+#dn-file-load-center{
+    /* padding: 220px;
+    text-align: center;
+     */
+    
+     /* or */
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+}
+
+#main-page,
+.section-title {
+    margin: 50px;
+    font-family: 'Segoe UI';
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--dn-grey);
+    text-align: center;
+
+}
+
+#top-main-view {
+    text-align: right;
+}
+
+#save-add-edit-btn,                 /* Seperate "Welcome.." messages / "File Loader", from the buttons */
+#submit-file-loader-Btn,
+#employer-profile-nav-link,
+#applicant-profile-nav-link{
+    margin-top: 10px;
+}
+
+#top-applicant-profile,
+#top-employer-profile,
+#top-welcome-add-edit-job-employer,
+#top-main-view-employer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .sections-container{  
+    margin: calc(10%);
+} */
+
+#form-welcome-main-view-employer{
+    display: block;    
+}
+#main-view-employer-add-new-job-anchor{
+    margin-top: 28px;
+}
+
+
+/* --------------- nav-links, btns, drop down, combo, files --------------- */
+
+.green-btn {
+    background-color: var(--dn-green);
+    color: white;
+}
+
+.pink-btn{
+    background-color: var(--dn-pink);
+    color: white;
+
+}
+
+.grey-btn{
+    background-color: var(--dn-grey);
+    color: white;
+}
+
+/* .nav-link-main-page:hover {
+    background-color: var(--dn-grey);
+    color: var(--dn-pink);
+} */
+
+.nav-link2{
+    width:fit-content;
+    font-size: 0.8rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    /* align-items: center; */
+    text-decoration: none;      /* an example: deleting underline */
+    cursor: pointer;
+    margin: 2px;
+}
+
+.nav-link{
+    width:fit-content;
+    font-size: 0.8rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    text-decoration: none;      
+    cursor: pointer;
+    margin: auto;
+}
+
+/* bordering, padding, etc for href & buttons*/
+#input-file-file-load,
+#applyMessageBtn,
+#applicant-job-display-role-category-drop-down,
+#applicant-job-display-location-combo-box,
+#add-edit-role-category-drop-down,
+#add-edit-location-combo-box,
+.title-file,
+button,
+#main-view-employer-profile-href,
+#main-view-employer-applicant-applies-href,
+#login-btn,
+#applicant-profile-picture,
+#applicant-profile-cv,
+#employer-profile-picture-input,
+#employer-profile-company-logo {
+    width: auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#login-btn{             /* that is only for line up with "Profile" button right below */
+    width: 60px;
+}
+
+#submit-file-loader-Btn {
+    width: 85px;
+    padding: 10px;
+    background-color: var(--dn-grey);
+    border: 2px solid var(--dn-green);
+    border-radius: 6px;
+    color: var(--dn-green);
+    cursor: pointer;
+
+}
+
+
+/* --------------- Filters "OnBlure" (Focus) --------------- */
+
+/* .filter {
+    filter: blur(3px);
+} */
+
+
+/* --------------- Tables --------------- */
+
+#table-main-view,
+#table-main-view-employer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--dn-grey);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    /* width: 100px; */
+    width: auto;
+}
+
+tr {
+    text-align: center;
+}
+
+#applicant-job-display-table,
+#table-add-edit-job-employer,
+#table-applicant-profile,
+#table-employer-profile{
+    width: 50%;
+    margin: auto;       /* centerilize tables */
+    margin-top: 30px;
+    
+}

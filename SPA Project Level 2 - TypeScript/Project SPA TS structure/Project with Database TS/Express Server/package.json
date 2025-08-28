@@ -1,0 +1,26 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "This framework allows you to practice developing SPA webpages in HTML, CSS, JavaScript and TypeScript.",
+  "main": "build/app.js",
+  "scripts": {
+    "build": "tsc && cp ./node_modules/papaparse/papaparse.min.js ./build/src/assets/",
+    "start": "npm run build:live",
+    "build:live": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "papaparse": "^5.5.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/papaparse": "^5.3.15",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "type": "module"
+}
